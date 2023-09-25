@@ -236,13 +236,6 @@ export const Step3 = ({ callback }) => {
         return;
       }
       if (
-        userContext?.selectedActionsState?.p2p_my_nfts.length === 0
-      ) {
-        infoToast("Error", "Please select NFTs");
-        setIsCreatingListing(false);
-        return;
-      }
-      if (
         userContext?.selectedActionsState?.p2p_nfts.length === 0 &&
         userContext?.selectedActionsState?.p2p_fts.length === 0
       ) {
@@ -302,9 +295,9 @@ export const Step3 = ({ callback }) => {
         }
       });
       const nonce = response.data.data;
-
+console.log(listing_nfts, listing_fts, interested_fts, interested_nfts, swaps, reservations, listingPeriod, targetted_to, signer, address, nonce, royalty)
       const body = await sdk.sc.p2ps.getListingBody(listing_nfts, listing_fts, interested_fts, interested_nfts, swaps, reservations, listingPeriod, targetted_to, signer, address, nonce, royalty);
-
+console.log(body)
       const res = await axios.post('/api/post/postCreateP2P', {
         body,
       });
