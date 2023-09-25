@@ -295,9 +295,9 @@ export const Step3 = ({ callback }) => {
         }
       });
       const nonce = response.data.data;
-console.log(listing_nfts, listing_fts, interested_fts, interested_nfts, swaps, reservations, listingPeriod, targetted_to, signer, address, nonce, royalty)
+
       const body = await sdk.sc.p2ps.getListingBody(listing_nfts, listing_fts, interested_fts, interested_nfts, swaps, reservations, listingPeriod, targetted_to, signer, address, nonce, royalty);
-console.log(body)
+
       const res = await axios.post('/api/post/postCreateP2P', {
         body,
       });

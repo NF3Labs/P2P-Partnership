@@ -4888,7 +4888,7 @@ next@12.3.1:
 
 nf3-sdk@./backend/nf3-sdk-v1.0.17.tgz:
   version "1.0.17"
-  resolved "./backend/nf3-sdk-v1.0.17.tgz#5ec1fd56c7e24b877f7cead6dadbe4eb105ced14"
+  resolved "./backend/nf3-sdk-v1.0.17.tgz#6ba305bd84980865c11bd0ce938f75c9cc03b88f"
   dependencies:
     axios "^1.4.0"
     ethers "~5.7.2"
