@@ -9,7 +9,7 @@ export const FeeConfiguration =
   royalty_to: ["0x20dC8c1401696b848FafB9b1F1D0e0038f10B978"], // Royalty to address
   royalty_percentage: [6], // Royalty percentage. Current is 6%.
   fee_to: "0x20dC8c1401696b848FafB9b1F1D0e0038f10B978", // Fee to address
-  fee_tokenContract: "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6", // Fee token contract
+  fee_tokenContract: "0x5fEd6B6cd6f1F48028Eb53Fa99b6333642eC8e0f", // Fee token contract
   fee_amount: "0.00000005", // Fee amount
   fee_rate: 3 // Fee rate. Current is 3%. If this value is set, then fee should be bigger value between fixed fee_amount and listed token fee_rate percentage.
 };
